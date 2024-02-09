@@ -9,10 +9,18 @@ const encrypt = (data) => {
 };
 
 const decrypt = (encryptedData) => {
-    // Decrypt the data using AES and the secret key
-    const decryptedBytes = CryptoJS.AES.decrypt(encryptedData, secretKey);
-    const decryptedData = decryptedBytes.toString(CryptoJS.enc.Utf8);
-    return decryptedData;
+    try {
+        if(encryptedData){
+            const decryptedBytes = CryptoJS.AES.decrypt(encryptedData, secretKey);
+            const decryptedData = decryptedBytes.toString(CryptoJS.enc.Utf8);
+            return decryptedData;
+        } 
+    } catch (error) {
+        console.error('Decryption error:', error);
+        return null; // or handle the error accordingly
+    }
 };
+
+
 
 export { encrypt, decrypt };
