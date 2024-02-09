@@ -1,0 +1,224 @@
+import {
+  createBrowserRouter,
+} from "react-router-dom";
+import Main from "../Layouts/Main/Main";
+import MyAccount from "../Layouts/MyAccount/MyAccount";
+import Checkout from "../pages/Checkout/Checkout";
+import Home from "../pages/Home/Home";
+import ForgotPassword from "../pages/Login/ForgotPassword/ForgotPassword";
+import LoginWithEmail from "../pages/Login/LoginWithEmail/LoginWithEmail";
+import LoginWithPhone from "../pages/Login/LoginWithPhone/LoginWithPhone";
+import OTPVerification from "../pages/Login/OTPVerification/OTPVerification";
+import SignUp from "../pages/Login/SignUp/SignUp";
+import MyAddresses from "../pages/MyAccount/MyAddresses/MyAddresses";
+import MyOrders from "../pages/MyAccount/MyOrders/MyOrders";
+import MyProfile from "../pages/MyAccount/MyProfile/MyProfile";
+import MyRatingAndReviews from "../pages/MyAccount/MyRatingAndReviews/MyRatingAndReviews";
+import MyWallet from "../pages/MyAccount/MyWallet/MyWallet";
+import Notifications from "../pages/MyAccount/Notifications/Notifications";
+import ReturnAndCancel from "../pages/MyAccount/ReturnAndCancel/ReturnAndCancel";
+import StoreAndEventDetails from "../pages/StoreAndEventDetails/StoreAndEventDetails";
+import StoreAndEventLocations from "../pages/StoreAndEventLocations/StoreAndEventLocations";
+import ContactUs from "../pages/ContactUs/ContactUs";
+import FrequentlyAskedQuestions from "../pages/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
+import ProductFilterPage from "../pages/ProductFilterPage/ProductFilterPage";
+import MyOrderDetails from "../pages/MyAccount/MyOrderDetails/MyOrderDetails";
+import UpdatePersonalDetails from "../pages/MyAccount/UpdatePersonalDetails/UpdatePersonalDetails";
+import UpdatePassword from "../pages/MyAccount/UpdatePassword/UpdatePassword";
+import AddNewAddress from "../pages/MyAccount/AddNewAddress/AddNewAddress";
+import EditAddress from "../pages/MyAccount/EditAddress/EditAddress";
+import ProductDetails from "../pages/ProductDetails/ProductDetails";
+import OrderConfirmed from "../pages/OrderConfirmed/OrderConfirmed";
+import WhoWeAre from "../pages/WhoWeAre/WhoWeAre";
+import AllReviewPage from "../pages/AllReviewPage/AllReviewPage";
+import BeautyAdvice from "../pages/BeautyAdvice/BeautyAdvice";
+import BuyingGuides from "../pages/BuyingGuides/BuyingGuides";
+import BeautyAdviceDetails from "../pages/BeautyAdviceDetails/BeautyAdviceDetails";
+import Campaign from "../pages/Campaign/Campaign";
+import ProductDetailsWithSize from "../pages/ProductDetailsWithSize/ProductDetailsWithSize";
+import ProductDetailsWithOffer from "../pages/ProductDetailsWithOffer/ProductDetailsWithOffer";
+import AllReviewPageWithNoReview from "../pages/AllReviewPageWithNoReview/AllReviewPageWithNoReview";
+import BrandPageForMobile from "../pages/BrandPageForMobile/BrandPageForMobile";
+import EmailOTPVerification from "../pages/Login/EmailOTPVerification/EmailOTPVerification";
+import PhoneOTPVerification from "../pages/Login/PhoneOTPVerification/PhoneOTPVerification";
+import ResetPassword from "../pages/Login/ResetPassword/ResetPassword";
+import Test from "../pages/test/test";
+
+  export const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main/>,
+    //   errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/",
+          element: <Home/>,
+        },
+        {
+          path: "/product-details",
+          element: <ProductDetails />,
+        },
+        {
+          path: "/product-details-with-size",
+          element: <ProductDetailsWithSize />,
+        },
+        {
+          path: "/product-details-with-offer",
+          element: <ProductDetailsWithOffer />,
+        },
+        {
+          path: "/all-review",
+          element: <AllReviewPage />,
+        },
+        {
+          path: "/all-review-with-no-review",
+          element: <AllReviewPageWithNoReview />,
+        },
+        {
+          path: "/login-with-email",
+          element: <LoginWithEmail />,
+        },
+        {
+          path: "/login-with-phone",
+          element: <LoginWithPhone />,
+        },
+        {
+          path: "/otp-verification-phone",
+          element: <PhoneOTPVerification />,
+        },
+        {
+          path: "/sign-up",
+          element: <SignUp />,
+        },
+        {
+          path: "/forgot-password",
+          element: <ForgotPassword />,
+        },
+        {
+          path: "/otp-verification",
+          element: <OTPVerification />,
+        },
+        {
+          path: "/otp-verification-email",
+          element: <EmailOTPVerification />,
+        },
+        {
+          path: "/reset-password",
+          element: <ResetPassword />,
+        },
+    
+        {
+          path: "/campaign",
+          element: <Campaign />,
+        },
+        {
+          path: "/product-filter",
+          element: <ProductFilterPage />,
+        },
+        {
+          path: "/brand-page-for-mobile",
+          element: <BrandPageForMobile />,
+        },
+        {
+          path: "/checkout",
+          element: <Checkout />,
+        },
+        {
+          path: "/order-confirmed",
+          element: <OrderConfirmed />,
+        },
+        {
+          path: "/store-and-event-location",
+          element: <StoreAndEventLocations />,
+        },
+        {
+          path: "/store-and-event-details",
+          element: <StoreAndEventDetails/>,
+        },
+        {
+          path: "/contact-us",
+          element: <ContactUs/>,
+        },
+        {
+          path: "/frequently-asked-questions",
+          element: <FrequentlyAskedQuestions/>,
+        },
+        {
+          path: "/who-we-are",
+          element: <WhoWeAre/>,
+        },
+        {
+          path: "/beauty-advice",
+          element: <BeautyAdvice/>,
+        },
+        {
+          path: "/beauty-advice-details/:id",
+          element: <BeautyAdviceDetails/>,
+        },
+        {
+          path: "/buying-guides",
+          element: <BuyingGuides/>,
+        },
+        {
+          path: "/test",
+          element: <Test/>,
+        },
+      ],
+    },
+    {
+      path: "/my-account",
+      element: <MyAccount />,
+      //   errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/my-account/my-profile",
+          element: <MyProfile />,
+        },
+        {
+          path: "/my-account/my-profile/update-personal-details",
+          element: <UpdatePersonalDetails />,
+        },
+        {
+          path: "/my-account/my-profile/update-password",
+          element: <UpdatePassword />,
+        },
+        {
+          path: "/my-account/my-wallet",
+          element: <MyWallet />,
+        },
+        {
+          path: "/my-account/my-orders",
+          element: <MyOrders />,
+        },
+        {
+          path: "/my-account/my-orders/order-details",
+          element: <MyOrderDetails />,
+        },
+        {
+          path: "/my-account/return-and-cancel",
+          element: <ReturnAndCancel />,
+        },
+        {
+          path: "/my-account/my-rating-and-reviews",
+          element: <MyRatingAndReviews />,
+        },
+        {
+          path: "/my-account/notifications",
+          element: <Notifications />,
+        },
+        {
+          path: "/my-account/my-addresses",
+          element: <MyAddresses />,
+        },
+        {
+          path: "/my-account/my-addresses/add-new-address",
+          element: <AddNewAddress />,
+        },
+        {
+          path: "/my-account/my-addresses/edit-address/:id",
+          element: <EditAddress />,
+        },
+       
+      ],
+    },
+  ]);
