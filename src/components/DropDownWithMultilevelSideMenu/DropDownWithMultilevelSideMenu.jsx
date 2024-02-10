@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import NavbarHoverIcon from "../../assets/NavbarHoverIcon/NavbarHoverIcon.svg";
 import { Link } from "react-router-dom";
 
-const DropDownWithMultilevelSideMenu = ({ isBrandOpen }) => {
+const DropDownWithMultilevelSideMenu = ({ isBrandOpen, setIsBrandOpen }) => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
@@ -23,7 +23,7 @@ const DropDownWithMultilevelSideMenu = ({ isBrandOpen }) => {
       >
         {/* menu Items start */}
         <div className="grid grid-cols-4 lg:grid-cols-6 w-full">
-          <div className="px-5 bg-white">
+          <div onClick={() => setIsBrandOpen(false)} className="px-5 bg-white">
             <Link to={"/product-filter"}>
               <h5 className="my-4 text-black  text-lg font-medium leading-normal hover:cursor-pointer">
                 Face
@@ -92,7 +92,7 @@ const DropDownWithMultilevelSideMenu = ({ isBrandOpen }) => {
               </Link>
             </div>
           </div>
-          <div className="px-5 bg-[#EEFAFF]">
+          <div onClick={() => setIsBrandOpen(false)} className="px-5 bg-[#EEFAFF]">
             <Link to={"/product-filter"}>
               <h5 className="my-4 text-black  text-lg font-medium leading-normal hover:cursor-pointer">
                 Eyes
@@ -136,7 +136,7 @@ const DropDownWithMultilevelSideMenu = ({ isBrandOpen }) => {
               </Link>
             </div>
           </div>
-          <div className="px-5 bg-white">
+          <div onClick={() => setIsBrandOpen(false)} className="px-5 bg-white">
             <Link to={"/product-filter"}>
               <h5 className="my-4 text-black  text-lg font-medium leading-normal hover:cursor-pointer">
                 Lips
@@ -205,7 +205,7 @@ const DropDownWithMultilevelSideMenu = ({ isBrandOpen }) => {
               </Link>
             </div>
           </div>
-          <div className="px-5 bg-[#EEFAFF]">
+          <div onClick={() => setIsBrandOpen(false)} className="px-5 bg-[#EEFAFF]">
             <Link to={"/product-filter"}>
               <h5 className="my-4 text-black  text-lg font-medium leading-normal hover:cursor-pointer">
                 Nails
@@ -284,7 +284,7 @@ const DropDownWithMultilevelSideMenu = ({ isBrandOpen }) => {
               </Link>
             </div>
           </div>
-          <div className="px-5 bg-white">
+          <div onClick={() => setIsBrandOpen(false)} className="px-5 bg-white">
             <Link to={"/product-filter"}>
               <h5 className="my-4 text-black  text-lg font-medium leading-normal hover:cursor-pointer">
                 Tools & Brushes
@@ -353,7 +353,7 @@ const DropDownWithMultilevelSideMenu = ({ isBrandOpen }) => {
               </Link>
             </div>
           </div>
-          <div className="px-5 bg-[#EEFAFF]">
+          <div onClick={() => setIsBrandOpen(false)} className="px-5 bg-[#EEFAFF]">
             <Link to={"/product-filter"}>
               <h5 className="my-4 text-black  text-lg font-medium leading-normal hover:cursor-pointer">
                 Top Brands
@@ -377,7 +377,7 @@ const DropDownWithMultilevelSideMenu = ({ isBrandOpen }) => {
               </Link>
             </div>
           </div>
-          <div className="px-5 bg-white">
+          <div onClick={() => setIsBrandOpen(false)} className="px-5 bg-white">
             <Link to={"/product-filter"}>
               <h5 className="my-4 text-black  text-lg font-medium leading-normal hover:cursor-pointer">
                 Face
@@ -446,7 +446,7 @@ const DropDownWithMultilevelSideMenu = ({ isBrandOpen }) => {
               </Link>
             </div>
           </div>
-          <div className="px-5 bg-[#EEFAFF]">
+          <div onClick={() => setIsBrandOpen(false)} className="px-5 bg-[#EEFAFF]">
             <Link to={"/product-filter"}>
               <h5 className="my-4 text-black  text-lg font-medium leading-normal hover:cursor-pointer">
                 Nails

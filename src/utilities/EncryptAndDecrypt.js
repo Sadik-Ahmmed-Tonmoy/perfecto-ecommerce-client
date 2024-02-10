@@ -21,6 +21,4 @@ const decrypt = (encryptedData) => {
     }
 };
 
-
-
 export { encrypt, decrypt };

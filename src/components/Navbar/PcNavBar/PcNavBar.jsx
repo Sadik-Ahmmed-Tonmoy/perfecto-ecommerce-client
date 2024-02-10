@@ -161,7 +161,7 @@ const PcNavBar = ({ menuData }) => {
                             <CategoryTitle title={"Mom & Baby"} />
                             <CategoryTitle title={"Natural"} />
                         </div>
-                        <DropDownWithMultilevelSideMenu menuData={menuData} isBrandOpen={isBrandOpen} />
+                        <DropDownWithMultilevelSideMenu menuData={menuData} isBrandOpen={isBrandOpen} setIsBrandOpen={setIsBrandOpen} />
                     </div>
                     {/* left side end */}
                     {/* right side start */}
