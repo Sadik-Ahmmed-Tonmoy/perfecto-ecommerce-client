@@ -3,46 +3,45 @@ import {
 } from "react-router-dom";
 import Main from "../Layouts/Main/Main";
 import MyAccount from "../Layouts/MyAccount/MyAccount";
+import AllReviewPage from "../pages/AllReviewPage/AllReviewPage";
+import AllReviewPageWithNoReview from "../pages/AllReviewPageWithNoReview/AllReviewPageWithNoReview";
+import BeautyAdvice from "../pages/BeautyAdvice/BeautyAdvice";
+import BeautyAdviceDetails from "../pages/BeautyAdviceDetails/BeautyAdviceDetails";
+import BrandPageForMobile from "../pages/BrandPageForMobile/BrandPageForMobile";
+import BuyingGuides from "../pages/BuyingGuides/BuyingGuides";
+import Campaign from "../pages/Campaign/Campaign";
 import Checkout from "../pages/Checkout/Checkout";
+import ContactUs from "../pages/ContactUs/ContactUs";
+import FrequentlyAskedQuestions from "../pages/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
 import Home from "../pages/Home/Home";
+import EmailOTPVerification from "../pages/Login/EmailOTPVerification/EmailOTPVerification";
 import ForgotPassword from "../pages/Login/ForgotPassword/ForgotPassword";
 import LoginWithEmail from "../pages/Login/LoginWithEmail/LoginWithEmail";
 import LoginWithPhone from "../pages/Login/LoginWithPhone/LoginWithPhone";
 import OTPVerification from "../pages/Login/OTPVerification/OTPVerification";
+import PhoneOTPVerification from "../pages/Login/PhoneOTPVerification/PhoneOTPVerification";
+import ResetPassword from "../pages/Login/ResetPassword/ResetPassword";
 import SignUp from "../pages/Login/SignUp/SignUp";
+import AddNewAddress from "../pages/MyAccount/AddNewAddress/AddNewAddress";
+import EditAddress from "../pages/MyAccount/EditAddress/EditAddress";
 import MyAddresses from "../pages/MyAccount/MyAddresses/MyAddresses";
+import MyOrderDetails from "../pages/MyAccount/MyOrderDetails/MyOrderDetails";
 import MyOrders from "../pages/MyAccount/MyOrders/MyOrders";
 import MyProfile from "../pages/MyAccount/MyProfile/MyProfile";
 import MyRatingAndReviews from "../pages/MyAccount/MyRatingAndReviews/MyRatingAndReviews";
 import MyWallet from "../pages/MyAccount/MyWallet/MyWallet";
 import Notifications from "../pages/MyAccount/Notifications/Notifications";
 import ReturnAndCancel from "../pages/MyAccount/ReturnAndCancel/ReturnAndCancel";
+import UpdatePassword from "../pages/MyAccount/UpdatePassword/UpdatePassword";
+import UpdatePersonalDetails from "../pages/MyAccount/UpdatePersonalDetails/UpdatePersonalDetails";
+import OrderConfirmed from "../pages/OrderConfirmed/OrderConfirmed";
+import ProductDetails from "../pages/ProductDetails/ProductDetails";
+import ProductDetailsWithOffer from "../pages/ProductDetailsWithOffer/ProductDetailsWithOffer";
+import ProductDetailsWithSize from "../pages/ProductDetailsWithSize/ProductDetailsWithSize";
+import ProductFilterPage from "../pages/ProductFilterPage/ProductFilterPage";
 import StoreAndEventDetails from "../pages/StoreAndEventDetails/StoreAndEventDetails";
 import StoreAndEventLocations from "../pages/StoreAndEventLocations/StoreAndEventLocations";
-import ContactUs from "../pages/ContactUs/ContactUs";
-import FrequentlyAskedQuestions from "../pages/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
-import ProductFilterPage from "../pages/ProductFilterPage/ProductFilterPage";
-import MyOrderDetails from "../pages/MyAccount/MyOrderDetails/MyOrderDetails";
-import UpdatePersonalDetails from "../pages/MyAccount/UpdatePersonalDetails/UpdatePersonalDetails";
-import UpdatePassword from "../pages/MyAccount/UpdatePassword/UpdatePassword";
-import AddNewAddress from "../pages/MyAccount/AddNewAddress/AddNewAddress";
-import EditAddress from "../pages/MyAccount/EditAddress/EditAddress";
-import ProductDetails from "../pages/ProductDetails/ProductDetails";
-import OrderConfirmed from "../pages/OrderConfirmed/OrderConfirmed";
 import WhoWeAre from "../pages/WhoWeAre/WhoWeAre";
-import AllReviewPage from "../pages/AllReviewPage/AllReviewPage";
-import BeautyAdvice from "../pages/BeautyAdvice/BeautyAdvice";
-import BuyingGuides from "../pages/BuyingGuides/BuyingGuides";
-import BeautyAdviceDetails from "../pages/BeautyAdviceDetails/BeautyAdviceDetails";
-import Campaign from "../pages/Campaign/Campaign";
-import ProductDetailsWithSize from "../pages/ProductDetailsWithSize/ProductDetailsWithSize";
-import ProductDetailsWithOffer from "../pages/ProductDetailsWithOffer/ProductDetailsWithOffer";
-import AllReviewPageWithNoReview from "../pages/AllReviewPageWithNoReview/AllReviewPageWithNoReview";
-import BrandPageForMobile from "../pages/BrandPageForMobile/BrandPageForMobile";
-import EmailOTPVerification from "../pages/Login/EmailOTPVerification/EmailOTPVerification";
-import PhoneOTPVerification from "../pages/Login/PhoneOTPVerification/PhoneOTPVerification";
-import ResetPassword from "../pages/Login/ResetPassword/ResetPassword";
-import Test from "../pages/test/test";
 
   export const router = createBrowserRouter([
     {
@@ -158,10 +157,6 @@ import Test from "../pages/test/test";
         {
           path: "/buying-guides",
           element: <BuyingGuides/>,
-        },
-        {
-          path: "/test",
-          element: <Test/>,
         },
       ],
     },
